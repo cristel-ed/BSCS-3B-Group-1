@@ -1,27 +1,26 @@
 from tkinter import *
-from PIL import ImageTk
 import register_form  # Import the register_form.py module
 
 # Create the login window
 def open_login_form():
     login = Tk()
-    login.geometry('900x660+200+15')
+    login.geometry('900x660')
     login.resizable(0, 0)
     login.title('Login Page')
 
     # Add background image
-    bgImage = PhotoImage(file='Image/LoginFormBg.png')
+    bgImage = PhotoImage(file='image/LoginForm1.png')
     bg_label = Label(login, image=bgImage)
     bg_label.place(x=0, y=0)
 
     # Functions to show and hide password
     def view_pass():
-        hidepass.config(file='Image/view.png')
+        hidepass.config(file='image/view.png')
         passEntry.config(show='')
         eye_button.config(command=hide_pass)
 
     def hide_pass():
-        hidepass.config(file='Image/hide.png')
+        hidepass.config(file='image/hide.png')
         passEntry.config(show='*')
         eye_button.config(command=view_pass)
 
@@ -42,14 +41,14 @@ def open_login_form():
         register_form.open_register_form()  # Open the register form
 
     # Heading labels
-    heading = Label(login, text='Evaluation System', font=('Arial Rounded MT Bold', 23, 'bold'), bg='#C2C1C1', fg='#000000')
-    heading.place(x=445, y=120)
-    heading = Label(login, text='Login Form', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
-    heading.place(x=530, y=170)
-    heading = Label(login, text='Username', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
-    heading.place(x=430, y=270)
-    heading = Label(login, text='Password', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
-    heading.place(x=430, y=350)
+  #  heading = Label(login, text='Evaluation System', font=('Arial Rounded MT Bold', 23, 'bold'), bg='#C2C1C1', fg='#000000')
+  #  heading.place(x=445, y=120)
+  #  heading = Label(login, text='Login Form', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
+  #  heading.place(x=530, y=170)
+  #  heading = Label(login, text='Username', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
+  #  heading.place(x=430, y=270)
+  #  heading = Label(login, text='Password', font=('Arial Rounded MT Bold', 15), bg='#C2C1C1', fg='#000000')
+  #  heading.place(x=430, y=350)
 
     # Username entry field
     userEntry = Entry(login, width=23, font=('Arial Rounded MT Bold', 12), bd=0, bg='#C2C1C1', fg='#747474')
@@ -66,7 +65,7 @@ def open_login_form():
     Frame(login, width=285, height=2, bg='#81B9CB').place(x=440, y=415)
 
     # Eye button for showing/hiding password
-    hidepass = PhotoImage(file='Image/hide.png')
+    hidepass = PhotoImage(file='image/hide.png')
     eye_button = Button(login, image=hidepass, bd=0, bg='#C2C1C1', cursor='hand2', command=view_pass)
     eye_button.place(x=690, y=380)
 

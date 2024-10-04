@@ -1,7 +1,6 @@
 from tkinter import *
-from PIL import ImageTk
 
-from System.login_form import open_login_form
+from System.oldform.login_form import open_login_form
 
 
 def open_register_form():
@@ -11,28 +10,28 @@ def open_register_form():
     register.title('Register Page')
 
     # Background Image
-    bgImage = PhotoImage(file='Image/LoginFormBg.png')
+    bgImage = PhotoImage(file='image/LoginFormBg.png')
     bg_label = Label(register, image=bgImage)
     bg_label.place(x=0, y=0)
 
     # Function to show and hide password
     def view_pass():
-        hidePass.config(file='Image/view.png')
+        hidePass.config(file='image/view.png')
         passEntry.config(show='')
         eye_button.config(command=hide_pass)
 
     def hide_pass():
-        hidePass.config(file='Image/hide.png')
+        hidePass.config(file='image/hide.png')
         passEntry.config(show='*')
         eye_button.config(command=view_pass)
 
     def view_pass2():
-        hidePass2.config(file='Image/view.png')
+        hidePass2.config(file='image/view.png')
         confirmPassEntry.config(show='')
         eye_button2.config(command=hide_pass2)
 
     def hide_pass2():
-        hidePass2.config(file='Image/hide.png')
+        hidePass2.config(file='image/hide.png')
         confirmPassEntry.config(show='*')
         eye_button2.config(command=view_pass2)
 
@@ -101,11 +100,11 @@ def open_register_form():
     registerButton.place(x=490, y=530)
 
     # Eye Button for Password and Confirm Password Visibility Toggle
-    hidePass = PhotoImage(file='Image/hide.png')
+    hidePass = PhotoImage(file='image/hide.png')
     eye_button = Button(register, image=hidePass, bd=0, bg='#C2C1C1', cursor='hand2', command=view_pass)
     eye_button.place(x=670, y=385)
 
-    hidePass2 = PhotoImage(file='Image/hide.png')
+    hidePass2 = PhotoImage(file='image/hide.png')
     eye_button2 = Button(register, image=hidePass2, bd=0, bg='#C2C1C1', cursor='hand2', command=view_pass2)
     eye_button2.place(x=670, y=435)
 
