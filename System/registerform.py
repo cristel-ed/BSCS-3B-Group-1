@@ -155,6 +155,7 @@ def open_registerform():
 
         if success:
             messagebox.showinfo("Registration", "Registration completed successfully!")
+            open_login()
         else:
             messagebox.showerror("Registration", "Username or Student ID already taken. Please try again.")
 

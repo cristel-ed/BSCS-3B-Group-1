@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f27e8a-6c45-49d4-9dd9-c912214c495a" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/Image/LoginFormMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/loginform.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/registerform.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.adminloginform.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.db_connection.executor": "Run",
-    "Python.login_form.executor": "Run",
-    "Python.loginform.executor": "Run",
-    "Python.register_form.executor": "Run",
-    "Python.registerform.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1/System/Image"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.adminloginform.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python.loginform.executor&quot;: &quot;Run&quot;,
+    &quot;Python.register_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python.registerform.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1/System/Image&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\Image" />
@@ -76,7 +72,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="login_form" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="loginform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BSCS-3B-Group-1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,29 +85,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\oldform\login_form.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="register_form" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BSCS-3B-Group-1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/System" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\oldform\register_form.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/System/loginform.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,8 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.login_form" />
-        <item itemvalue="Python.register_form" />
+        <item itemvalue="Python.loginform" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728034891521</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/main'">
+      <option name="closed" value="true" />
+      <created>1728091971656</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728091971656</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
