@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41f27e8a-6c45-49d4-9dd9-c912214c495a" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/registerform.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.adminloginform.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_connection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_form.executor&quot;: &quot;Run&quot;,
-    &quot;Python.loginform.executor&quot;: &quot;Run&quot;,
-    &quot;Python.register_form.executor&quot;: &quot;Run&quot;,
-    &quot;Python.registerform.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1/System/Image&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.adminloginform.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.db_connection.executor": "Run",
+    "Python.login_form.executor": "Run",
+    "Python.loginform.executor": "Run",
+    "Python.register_form.executor": "Run",
+    "Python.registerform.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Jomari/Downloads/Evaluation System download/BSCS-3B-Group-1-main/System"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\Image" />
@@ -172,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728091971656</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/main'">
+      <option name="closed" value="true" />
+      <created>1728122253963</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728122253963</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
