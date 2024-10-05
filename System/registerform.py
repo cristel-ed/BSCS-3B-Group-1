@@ -47,6 +47,8 @@ def open_registerform():
                 entry.config(fg='#000000')
             if is_password:
                 entry.config(show='*')
+                entry.delete(0, END)
+                entry.config(fg='#000000')
 
         def focus_out(event):
             if entry.get() == '':

@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk
 import registerform
+import adminloginform
 import db_connection
 
 # Create the login window
@@ -40,7 +41,6 @@ def open_loginform():
                     entry.config(show='*')
                     entry.insert(0, placeholder_text)
                     entry.config(fg='#747474')
-                    entry.config(show='')  # Show * for placeholder
                 else:
                     entry.insert(0, placeholder_text)
                     entry.config(fg='#747474')
@@ -57,7 +57,11 @@ def open_loginform():
 
     def openregister():
         login.destroy()  # Close the current login form
-        registerform.open_registerform()  # Open the register form
+        registerform.open_registerform() # Open the register form
+    def openadmin():
+        login.destroy()
+        adminloginform.open_adminform()
+
 
     def login_user():
         """Fetch the form data and verify user credentials."""
@@ -86,6 +90,10 @@ def open_loginform():
     loginButton.place(x=95, y=376)
     signupButton = Button(login, width=5, text='Sign up', font=('Arial Rounded MT Bold', 7), bd=0, bg='#ffffff', activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2', command=openregister)
     signupButton.place(x=195, y=428)
+
+    adminImage =PhotoImage(file='Image/AdminButton.png')
+    adminButton = Button(login, image=adminImage, bd=0, bg='#FBADAD', activebackground='#FBADAD', cursor='hand2',command=openadmin)
+    adminButton.place(x=258, y=424)
 
     hidePass = PhotoImage(file='Image/hide16x16.png')
     eye_button = Button(login, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2', command=view_pass)

@@ -49,3 +49,17 @@ def verify_user(username, password):
     conn.close()
     return result is not None
 
+
+def verify_admin(username, password):
+    """Verify the admin's credentials against the database."""
+    conn = get_connection()
+    cursor = conn.cursor()
+    query = "SELECT * FROM admins WHERE username = %s AND password = %s"
+    cursor.execute(query, (username, password))
+    result = cursor.fetchone()
+    cursor.close()
+    conn.close()
+    return result is not None
+
+
+
