@@ -3,17 +3,17 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk
 import db_connection
-from loginform import open_loginform
+import loginform
 
 # Create the register window
 def open_registerform():
     register = Tk()
-    register.geometry('320x480')
-    register.resizable(0, 0)
+    register.geometry('1024x720+180+0')
+    register.overrideredirect(True)
     register.title('Register Page')
 
     # Add background image
-    backgroundImage = PhotoImage(file='Image/registerFormMobile.png')
+    backgroundImage = PhotoImage(file='Image/Signup.png')
     bg_label = Label(register, image=backgroundImage)
     bg_label.place(x=0, y=0)
 
@@ -37,73 +37,28 @@ def open_registerform():
         cpassEntry.config(show='*')
         eye_button2.config(command=view_pass2)
 
-    def create_placeholder_entry(entry, placeholder_text, is_password=False):
-        def focus_in(event):
-            if entry.get() == placeholder_text:
-                entry.delete(0, END)
-                entry.config(fg='#000000')
-            if is_password:
-                entry.config(show='*')
-                entry.delete(0, END)
-                entry.config(fg='#000000')
-
-        def focus_out(event):
-            if entry.get() == '':
-                if is_password:
-                    entry.config(show='*')
-                    entry.insert(0, placeholder_text)
-                    entry.config(fg='#747474')
-                    entry.config(show='')
-                else:
-                    entry.insert(0, placeholder_text)
-                    entry.config(fg='#747474')
-
-        if is_password:
-            entry.insert(0, placeholder_text)
-            entry.config(fg='#747474')
-        else:
-            entry.insert(0, placeholder_text)
-            entry.config(fg='#747474')
-
-        entry.bind('<FocusIn>', focus_in)
-        entry.bind('<FocusOut>', focus_out)
 
     def open_login():
         register.destroy()  # Close the current register form
-        open_loginform()
+        loginform.open_loginform()
 
     # Create entry fields
-    fNameEntry = Entry(register, width=9, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    fNameEntry.place(x=76, y=206)
-    create_placeholder_entry(fNameEntry, 'First Name')
-
-    lNameEntry = Entry(register, width=9, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    lNameEntry.place(x=172, y=206)
-    create_placeholder_entry(lNameEntry, 'Last Name')
-
-    studentIDEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    studentIDEntry.place(x=76, y=236)
-    create_placeholder_entry(studentIDEntry, 'Student ID')
-
-    courseEntry = Entry(register, width=6, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    courseEntry.place(x=76, y=267)
-    create_placeholder_entry(courseEntry, 'Course')
-
-    yearnsecEntry = Entry(register, width=12, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    yearnsecEntry.place(x=150, y=267)
-    create_placeholder_entry(yearnsecEntry, 'Year & Section')
-
-    userEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    userEntry.place(x=76, y=298.5)
-    create_placeholder_entry(userEntry, 'Username')
-
-    passEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    passEntry.place(x=76, y=329)
-    create_placeholder_entry(passEntry, 'Password', is_password=True)
-
-    cpassEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    cpassEntry.place(x=76, y=359.5)
-    create_placeholder_entry(cpassEntry, 'Confirm Password', is_password=True)
+    fNameEntry = Entry(register, width=11, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    fNameEntry.place(x=521, y=158)
+    lNameEntry = Entry(register, width=11, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    lNameEntry.place(x=754, y=158)
+    studentIDEntry = Entry(register, width=25, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    studentIDEntry.place(x=521, y=243)
+    courseEntry = Entry(register, width=11, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    courseEntry.place(x=521, y=327)
+    yearnsecEntry = Entry(register, width=11, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    yearnsecEntry.place(x=754, y=327)
+    userEntry = Entry(register, width=25, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    userEntry.place(x=521, y=413)
+    passEntry = Entry(register, width=25, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    passEntry.place(x=521, y=499)
+    cpassEntry = Entry(register, width=25, font=('Arial Rounded MT Bold', 20), bd=0, bg='#ADD1FB', fg='#000000')
+    cpassEntry.place(x=521, y=584)
 
     def register_user():
         """Fetch the form data, convert to lowercase, validate, and register the user."""
@@ -156,22 +111,26 @@ def open_registerform():
         else:
             messagebox.showerror("Registration", "Username or Student ID already taken. Please try again.")
 
-    registerButton = Button(register, width=18, text='Submit', font=('Arial Rounded MT Bold', 8), bd=0, bg='#ADD1FB',
-                            activebackground='#ADD1FB', cursor='hand2', command=register_user)
-    registerButton.place(x=95, y=396)
-    signupButton = Button(register, width=5, text='Sign in', font=('Arial Rounded MT Bold', 7), bd=0, bg='#ffffff',
-                          activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2',
-                          command=open_login)
-    signupButton.place(x=205, y=428)
+    registerButton = Button(register, width=10, text='Submit', font=('Arial Rounded MT Bold', 14), bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2', command=register_user)
+    registerButton.place(x=665, y=641)
+    signupButton = Button(register, width=5, text='Sign in', font=('Arial Rounded MT Bold', 12), bd=0, bg='#ffffff',activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2',command=open_login)
+    signupButton.place(x=810, y=689)
 
-    hidePass = PhotoImage(file='Image/hide16x16.png')
-    eye_button = Button(register, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
-                        command=view_pass)
-    eye_button.place(x=230, y=329)
+    hidePass = PhotoImage(file='Image/hide.png')
+    eye_button = Button(register, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',command=view_pass)
+    eye_button.place(x=910, y=503)
 
-    hidePass2 = PhotoImage(file='Image/hide16x16.png')
-    eye_button2 = Button(register, image=hidePass2, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
-                         command=view_pass2)
-    eye_button2.place(x=230, y=359.5)
+    hidePass2 = PhotoImage(file='Image/hide.png')
+    eye_button2 = Button(register, image=hidePass2, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',command=view_pass2)
+    eye_button2.place(x=910, y=587)
+
+    def close_window():
+        register.destroy()
+
+    # Create a custom close button (X)
+    xImage = PhotoImage(file='Image/X-ICon.png')
+    close_button = Button(register, image=xImage, command=close_window, bg='#FBADAD', fg='#000000',activebackground='#FBADAD', font=('Arial', 10) , bd=0, cursor='hand2')
+    close_button.place(x=973, y=22)
 
     register.mainloop()
+
