@@ -1,19 +1,16 @@
-#registerform.py
+# registerform.py
 from tkinter import *
 from tkinter import messagebox
-
 from PIL import ImageTk
-
-from System import db_connection
-from System.loginform import open_loginform
-
+import db_connection
+from loginform import open_loginform
 
 # Create the register window
 def open_registerform():
     register = Tk()
     register.geometry('320x480')
     register.resizable(0, 0)
-    register.title('register Page')
+    register.title('Register Page')
 
     # Add background image
     backgroundImage = PhotoImage(file='Image/registerFormMobile.png')
@@ -85,27 +82,27 @@ def open_registerform():
     create_placeholder_entry(lNameEntry, 'Last Name')
 
     studentIDEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    studentIDEntry.place(x=76,y=236)
+    studentIDEntry.place(x=76, y=236)
     create_placeholder_entry(studentIDEntry, 'Student ID')
 
     courseEntry = Entry(register, width=6, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    courseEntry.place(x=76,y=267)
+    courseEntry.place(x=76, y=267)
     create_placeholder_entry(courseEntry, 'Course')
 
     yearnsecEntry = Entry(register, width=12, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    yearnsecEntry.place(x=150,y=267)
+    yearnsecEntry.place(x=150, y=267)
     create_placeholder_entry(yearnsecEntry, 'Year & Section')
 
     userEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    userEntry.place(x=76,y=298.5)
+    userEntry.place(x=76, y=298.5)
     create_placeholder_entry(userEntry, 'Username')
 
     passEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    passEntry.place(x=76,y=329)
+    passEntry.place(x=76, y=329)
     create_placeholder_entry(passEntry, 'Password', is_password=True)
 
     cpassEntry = Entry(register, width=21, font=('Arial Rounded MT Bold', 10), bd=0, bg='#ADD1FB', fg='#000000')
-    cpassEntry.place(x =76,y=359.5)
+    cpassEntry.place(x=76, y=359.5)
     create_placeholder_entry(cpassEntry, 'Confirm Password', is_password=True)
 
     def register_user():
@@ -159,17 +156,22 @@ def open_registerform():
         else:
             messagebox.showerror("Registration", "Username or Student ID already taken. Please try again.")
 
-    registerButton = Button(register, width=18, text='Submit', font=('Arial Rounded MT Bold', 8), bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2', command=register_user)
+    registerButton = Button(register, width=18, text='Submit', font=('Arial Rounded MT Bold', 8), bd=0, bg='#ADD1FB',
+                            activebackground='#ADD1FB', cursor='hand2', command=register_user)
     registerButton.place(x=95, y=396)
-    signupButton = Button(register, width=5, text='Sign in', font=('Arial Rounded MT Bold', 7),bd=0,bg='#ffffff',activebackground='#ffffff',fg='#50C2C9',activeforeground='#50C2C9',cursor='hand2',command=open_login)
+    signupButton = Button(register, width=5, text='Sign in', font=('Arial Rounded MT Bold', 7), bd=0, bg='#ffffff',
+                          activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2',
+                          command=open_login)
     signupButton.place(x=205, y=428)
 
     hidePass = PhotoImage(file='Image/hide16x16.png')
-    eye_button = Button(register, image=hidePass, bd=0, bg='#ADD1FB',activebackground='#ADD1FB', cursor='hand2',command=view_pass)
+    eye_button = Button(register, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
+                        command=view_pass)
     eye_button.place(x=230, y=329)
 
     hidePass2 = PhotoImage(file='Image/hide16x16.png')
-    eye_button2 = Button(register, image=hidePass2, bd=0, bg='#ADD1FB',activebackground='#ADD1FB', cursor='hand2',command=view_pass2)
+    eye_button2 = Button(register, image=hidePass2, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
+                         command=view_pass2)
     eye_button2.place(x=230, y=359.5)
 
     register.mainloop()

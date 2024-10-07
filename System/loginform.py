@@ -57,11 +57,11 @@ def open_loginform():
 
     def openregister():
         login.destroy()  # Close the current login form
-        registerform.open_registerform() # Open the register form
-    def openadmin():
-        login.destroy()
-        adminloginform.open_adminform()
+        registerform.open_registerform()  # Open the register form
 
+    def openadmin():
+        login.destroy()  # Close login form
+        adminloginform.open_adminform()  # Open admin login form
 
     def login_user():
         """Fetch the form data and verify user credentials."""
@@ -72,29 +72,37 @@ def open_loginform():
             messagebox.showerror("Error", "Please enter your username and password!")
             return
 
-        # Call the function to verify credentials
+        # Call the function to verify credentials using SQLite3
         if db_connection.verify_user(username, password):
             messagebox.showinfo("Login", "Login successful!")
-            # You can now proceed to the next part of your application
+            # Proceed to next part of the application (e.g., open user dashboard)
         else:
             messagebox.showerror("Error", "Invalid username or password!")
 
+    # User entry field with placeholder
     userEntry = Entry(login, width=13, font=('Arial Rounded MT Bold', 12), bd=0, bg='#ADD1FB', fg='#000000')
     userEntry.place(x=97, y=243.5)
     create_placeholder_entry(userEntry, 'Username')
+
+    # Password entry field with placeholder and hidden text
     passEntry = Entry(login, width=13, font=('Arial Rounded MT Bold', 12), bd=0, bg='#ADD1FB', fg='#000000')
     passEntry.place(x=97, y=316.5)
     create_placeholder_entry(passEntry, 'Password', is_password=True)
 
+    # Submit button
     loginButton = Button(login, width=18, text='Submit', font=('Arial Rounded MT Bold', 8), bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2', command=login_user)
     loginButton.place(x=95, y=376)
+
+    # Sign-up button
     signupButton = Button(login, width=5, text='Sign up', font=('Arial Rounded MT Bold', 7), bd=0, bg='#ffffff', activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2', command=openregister)
     signupButton.place(x=195, y=428)
 
-    adminImage =PhotoImage(file='Image/AdminButton.png')
-    adminButton = Button(login, image=adminImage, bd=0, bg='#FBADAD', activebackground='#FBADAD', cursor='hand2',command=openadmin)
+    # Admin login button with image
+    adminImage = PhotoImage(file='Image/AdminButton.png')
+    adminButton = Button(login, image=adminImage, bd=0, bg='#FBADAD', activebackground='#FBADAD', cursor='hand2', command=openadmin)
     adminButton.place(x=258, y=424)
 
+    # Toggle show/hide password functionality
     hidePass = PhotoImage(file='Image/hide16x16.png')
     eye_button = Button(login, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2', command=view_pass)
     eye_button.place(x=230, y=318)
