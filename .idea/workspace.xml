@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="41f27e8a-6c45-49d4-9dd9-c912214c495a" name="Changes" comment="database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/Image/AdminLoginPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/System/Image/AdminLoginPage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System/adminloginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/adminloginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/db_connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/evaluation_system.db" beforeDir="false" afterPath="$PROJECT_DIR$/System/evaluation_system.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/loginform.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/System/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/registerform.py" afterDir="false" />
     </list>
@@ -49,20 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.adminloginform.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.db_connection.executor": "Run",
-    "Python.login_form.executor": "Run",
-    "Python.loginform.executor": "Run",
-    "Python.register_form.executor": "Run",
-    "Python.registerform.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1/System/Image"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.admindash.executor&quot;: &quot;Run&quot;,
+    &quot;Python.adminloginform.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python.loginform.executor&quot;: &quot;Run&quot;,
+    &quot;Python.register_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python.registerform.executor&quot;: &quot;Run&quot;,
+    &quot;Python.studentdash.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1/System/Image&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\Image" />
@@ -75,7 +78,7 @@
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.loginform">
     <configuration name="loginform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BSCS-3B-Group-1" />
       <option name="ENV_FILES" value="" />
@@ -247,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728285136831</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="database">
+      <option name="closed" value="true" />
+      <created>1728294993671</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728294993671</updated>
+    </task>
+    <task id="LOCAL-00015" summary="database">
+      <option name="closed" value="true" />
+      <created>1728295076852</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728295076852</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
