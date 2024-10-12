@@ -1,5 +1,5 @@
+#registerform.py
 from tkinter import *
-from PIL import ImageTk
 import functions
 
 def open_registerform():

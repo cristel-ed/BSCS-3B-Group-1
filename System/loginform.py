@@ -1,5 +1,5 @@
+#loginform.py
 from tkinter import *
-from PIL import ImageTk
 import functions  # Import the functions module
 
 def open_loginform():

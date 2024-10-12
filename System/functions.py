@@ -1,3 +1,4 @@
+#functions.py
 import sqlite3
 from sqlite3 import Error
 from tkinter import messagebox
