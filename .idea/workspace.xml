@@ -6,8 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="41f27e8a-6c45-49d4-9dd9-c912214c495a" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/adminloginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/adminloginform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/System.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/AdminButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/AdminButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/AdminLoginPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/AdminLoginPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/LoginPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/LoginPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/Signup.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Signup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/X-ICon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/X-ICon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/hide.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/hide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Image/view.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/admindash.py" beforeDir="false" afterPath="$PROJECT_DIR$/admindash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/adminloginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminloginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/evaluation_system.db" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_system.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/registerform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/studentdash.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentdash.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +77,7 @@
     "Python.registerform.executor": "Run",
     "Python.studentdash.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Jomari/PycharmProjects/BSCS-3B-Group-1"
   }
@@ -69,13 +88,14 @@
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1" />
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\Image" />
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\oldform\image" />
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System\oldform" />
       <recent name="C:\Users\Jomari\PycharmProjects\BSCS-3B-Group-1\System" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.loginform">
+  <component name="RunManager">
     <configuration name="loginform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BSCS-3B-Group-1" />
       <option name="ENV_FILES" value="" />
@@ -85,33 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/System" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/System/loginform.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="registerform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BSCS-3B-Group-1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/System" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/System/registerform.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loginform.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +121,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.loginform" />
-        <item itemvalue="Python.registerform" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728717451116</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=".">
+      <option name="closed" value="true" />
+      <created>1728718073332</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728718073332</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

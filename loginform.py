@@ -43,6 +43,7 @@ def open_loginform():
                           activebackground='#FBADAD', font=('Arial', 10), bd=0, cursor='hand2')
     close_button.place(x=973, y=22)
 
+    login.bind('<Return>', lambda event: functions.login_user(userEntry, passEntry, login))
     login.mainloop()
 
 if __name__ == '__main__':
