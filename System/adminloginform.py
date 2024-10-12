@@ -30,7 +30,7 @@ def open_adminform():
     signupButton = Button(admin, width=9, text='Login Here', font=('Arial Rounded MT Bold', 12), bd=0,
                           bg='#ffffff', activebackground='#ffffff', fg='#50C2C9',
                           activeforeground='#50C2C9', cursor='hand2',
-                          command=lambda: functions.openlogin(admin))
+                          command=lambda: functions.open_login(admin))
     signupButton.place(x=765, y=594)
 
     hidePass = PhotoImage(file='Image/hide.png')

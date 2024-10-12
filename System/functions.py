@@ -207,7 +207,7 @@ def admin_user(userEntry, passEntry, admin):
 
     if verify_admin(username, password):
         messagebox.showinfo("Admin", "Admin login successful!")
-        openadmindash(admin)
+        open_admin_dashboard(admin)
     else:
         messagebox.showerror("Error", "Invalid admin username or password!")
 
@@ -220,7 +220,7 @@ def open_student_dashboard(login):
     studentdash.open_student_dashboard()
 
 # Open the admin dashboard
-def openadmindash(admin):
+def open_admin_dashboard(admin):
     """Open the admin dashboard."""
     admin.destroy()
     admindash.open_admin_dashboard()
