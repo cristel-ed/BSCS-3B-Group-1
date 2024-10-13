@@ -1,6 +1,9 @@
 #loginform.py
 from tkinter import *
-import functions  # Import the functions module
+from functions import user_auth
+from functions import navigation
+from functions import password_visibility
+
 
 def open_loginform():
     login = Tk()
@@ -20,30 +23,30 @@ def open_loginform():
 
     loginButton = Button(login, width=8, text='Submit', font=('Arial Rounded MT Bold', 15), bd=0, bg='#ADD1FB',
                          activebackground='#ADD1FB', cursor='hand2',
-                         command=lambda: functions.login_user(userEntry, passEntry, login))
+                         command=lambda: user_auth.login_user(userEntry, passEntry, login))
     loginButton.place(x=666, y=520)
 
     signupButton = Button(login, width=6, text='Sign up', font=('Arial Rounded MT Bold', 12), bd=0, bg='#ffffff',
                           activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9', cursor='hand2',
-                          command=lambda: functions.open_register(login))
+                          command=lambda: navigation.open_register(login))
     signupButton.place(x=795, y=594)
 
     adminImage = PhotoImage(file='Image/AdminButton.png')
     adminButton = Button(login, image=adminImage, bd=0, bg='#FBADAD', activebackground='#FBADAD', cursor='hand2',
-                         command=lambda: functions.open_admin(login))
+                         command=lambda: navigation.open_admin(login))
     adminButton.place(x=900, y=630)
 
     hidePass = PhotoImage(file='Image/hide.png')
     eye_button = Button(login, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
-                        command=lambda: functions.view_pass(passEntry, eye_button, hidePass))
+                        command=lambda: password_visibility.view_pass(passEntry, eye_button, hidePass))
     eye_button.place(x=885, y=440)
 
     xImage = PhotoImage(file='Image/X-ICon.png')
-    close_button = Button(login, image=xImage, command=lambda: functions.close_window(login), bg='#FBADAD', fg='#000000',
+    close_button = Button(login, image=xImage, command=lambda: navigation.close_window(login), bg='#FBADAD', fg='#000000',
                           activebackground='#FBADAD', font=('Arial', 10), bd=0, cursor='hand2')
     close_button.place(x=973, y=22)
 
-    login.bind('<Return>', lambda event: functions.login_user(userEntry, passEntry, login))
+    login.bind('<Return>', lambda event: user_auth.login_user(userEntry, passEntry, login))
     login.mainloop()
 
 if __name__ == '__main__':

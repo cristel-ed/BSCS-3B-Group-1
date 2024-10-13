@@ -1,6 +1,8 @@
 #registerform.py
 from tkinter import *
-import functions
+from functions import password_visibility
+from functions import user_auth
+from functions import navigation
 
 def open_registerform():
     register = Tk()
@@ -34,14 +36,14 @@ def open_registerform():
     hidePass = PhotoImage(file='Image/hide.png')
     eye_button = Button(
         register, image=hidePass, bd=0, bg='#ADD1FB', activebackground='#ADD1FB',
-        cursor='hand2', command=lambda: functions.view_pass(passEntry, eye_button, hidePass)
+        cursor='hand2', command=lambda: password_visibility.view_pass(passEntry, eye_button, hidePass)
     )
     eye_button.place(x=910, y=503)
 
     hidePass2 = PhotoImage(file='Image/hide.png')
     eye_button2 = Button(
         register, image=hidePass2, bd=0, bg='#ADD1FB', activebackground='#ADD1FB',
-        cursor='hand2', command=lambda: functions.view_pass(cpassEntry, eye_button2, hidePass2)
+        cursor='hand2', command=lambda: password_visibility.view_pass(cpassEntry, eye_button2, hidePass2)
     )
     eye_button2.place(x=910, y=587)
 
@@ -49,7 +51,7 @@ def open_registerform():
     registerButton = Button(
         register, width=10, text='Submit', font=('Arial Rounded MT Bold', 14), bd=0,
         bg='#ADD1FB', activebackground='#ADD1FB', cursor='hand2',
-        command=lambda: functions.register_user(
+        command=lambda: user_auth.register_user(
             fNameEntry, lNameEntry, studentIDEntry, courseEntry, yearnsecEntry,
             userEntry, passEntry, cpassEntry, register
         )
@@ -59,17 +61,17 @@ def open_registerform():
     signupButton = Button(
         register, width=5, text='Sign in', font=('Arial Rounded MT Bold', 12), bd=0,
         bg='#ffffff', activebackground='#ffffff', fg='#50C2C9', activeforeground='#50C2C9',
-        cursor='hand2', command=lambda: functions.open_login(register)
+        cursor='hand2', command=lambda: navigation.open_login(register)
     )
     signupButton.place(x=810, y=689)
 
     xImage = PhotoImage(file='Image/X-ICon.png')
     close_button = Button(
-        register, image=xImage, command=lambda: functions.close_window(register),
+        register, image=xImage, command=lambda: navigation.close_window(register),
         bg='#FBADAD', fg='#000000', activebackground='#FBADAD', font=('Arial', 10),
         bd=0, cursor='hand2'
     )
     close_button.place(x=973, y=22)
-    register.bind('<Return>', lambda event: functions.register_user(fNameEntry, lNameEntry, studentIDEntry, courseEntry,
+    register.bind('<Return>', lambda event: user_auth.register_user(fNameEntry, lNameEntry, studentIDEntry, courseEntry,
     yearnsecEntry, userEntry, passEntry, cpassEntry, register))
     register.mainloop()
